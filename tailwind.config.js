@@ -2,7 +2,18 @@
 module.exports = {
   content: ["./public/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      spacing: {
+        13: "3.25rem",
+      },
+      fontFamily: {
+        inter: ["Inter"],
+      },
+      colors: {
+        fap: "#bada55",
+        coffe: "#c0ffee",
+      },
+    },
   },
   plugins: [],
-}
+};
