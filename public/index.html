@@ -1,32 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&display=swap"
-      rel="stylesheet"
-    />
 
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Tailwind 01</title>
-    <!-- <style>
-        * {
-            border: 1px solid red;
-        }
-    </style> -->
-  </head>
-  <body>
-    <h1 class="text-6xl font-bold text-center my-10">
-      Learn
-      <span
-        class="bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent"
-        >tailwindCSS</span
-      >
-    </h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Tailwind 01</title>
+  <!-- <style>
+    #toggle:checked~label div.toggle-circle {
+      @apply translate-x-3;
+    }
+  </style> -->
+</head>
+
+<body class="dark:bg-slate-800 dark:text-slate-200">
+  <h1 class="text-6xl font-bold text-center my-10">
+    Learn
+    <span class="bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent">tailwindCSS</span>
+  </h1>
+  <!-- 
     <section
       class="mb-10 bg-gradient-to-br from-indigo-200 via-red-400 to-yellow-300"
     >
@@ -107,8 +104,76 @@
       <div
         class="w-[100px] h-[100px] bg-white bg-white/20 backdrop-blur-sm m-auto rounded-full"
       ></div>
-    </div>
+    </div> -->
 
-    <div class="mb-96"></div>
-  </body>
+  <hr class="my-10" />
+  <h2 class="text-3xl text-center hover:text-blue-900"><a
+      href="https://tailwindcss.com/docs/hover-focus-and-other-states#hover-focus-and-active" target="_blank">
+      Hover effect</a>
+  </h2>
+  <div class="flex justify-center">
+    <span class="text-sm text-slate-500 mr-2">Light</span>
+    <input type="checkbox" id="toggle" class="">
+    <label for="toggle">
+      <div class="w-9 h-5 bg-slate-500 rounded-full flex items-center p-1 cursor-pointer">
+        <div class="w-4 h-4 bg-white rounded-full toggle-circle"></div>
+      </div>
+    </label>
+    <span class="text-sm text-slate-500 ml-2">Dark</span>
+  </div>
+  <button
+    class="my-10 bg-sky-500 px-5 py-3 rounded-full text-white font-semibold font-inter block mx-auto hover:bg-sky-600 hover:bg-sky-600 active:bg-sky-800 focus:ring focus:ring-sky-300 dark:bg-slate-300 dark:text-slate-800 dark:hover:text-slate-900 dark:hover:bg-slate-100">
+    Simpan
+  </button>
+  <hr class="my-10" />
+  <h2 class="text-3xl text-center hover:text-blue-900"><a
+      href="https://tailwindcss.com/docs/hover-focus-and-other-states#styling-based-on-parent-state"
+      target="_blank">Group Hover
+      effect</a></h2>
+  <div
+    class="max-w-lg m-10 border border-slate-200 rounded-xl mx-auto p-5 shadow-md font-inter hover:bg-sky-500 group font-serif dark:hover:bg-slate-300">
+    <h5 class="font-bold text-slate-700 text-lg mb-3 group-hover:text-white dark:group-hover:text-slate-800">
+      my card
+    </h5>
+    <p
+      class="text-slate-600 group-hover:text-white selection:bg-lime-300 selection:text-slate-900 first-line:uppercase tracking-widest first-letter:text-7xl first-letter:float-left first-letter:mr-3 dark:group-hover:text-slate-800">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque,
+      amet recusandae labore quod quia ipsa blanditiis fuga, facilis explicabo
+      praesentium ullam debitis maiores? Labore, consequuntur vel aut animi
+      eius maiores?
+    </p>
+  </div>
+  <hr class="my-10" />
+  <h2 class="text-3xl text-center hover:text-blue-900"><a
+      href="https://tailwindcss.com/docs/hover-focus-and-other-states#styling-based-on-parent-state"
+      target="_blank">Form states</a></h2>
+  <div class="max-w-lg border border-slate-200 rounded-xl shadow-md font-inter p-5">
+    <form action="">
+      <label for="email">
+        <span
+          class="block font-semibold mb-1 text-slate-900 after:content-['*'] after:text-pink-500 after:ml-0.5">Email</span>
+        <input type="email" id="email" placeholder="input email..."
+          class="px-3 py-2 border shadow rounded w-full block text-small placeholder:
+          text-slate-400 focus:outline-none focus:ring-1 focus:ring-sky-500 focus:border-sky-500 invalid:text-pink-500 invalid:focus:ring-pink-700 invalid:focus:border-pink-700 peer">
+        <p class="text-sm mt-1 text-pink-700 invisible peer-invalid:visible">Email tidak valid</p>
+      </label>
+    </form>
+  </div>
+
+
+
+
+
+
+  <div class="mb-96"></div>
+  <script>
+    const checkbox = document.querySelector('#toggle');
+    const html = document.querySelector('html');
+
+    checkbox.addEventListener('click', function () {
+      checkbox.checkbox ? html.classList.add('dark') : html.classList.remove('dark');
+    });
+  </script>
+</body>
+
 </html>
