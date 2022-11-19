@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8" />
@@ -149,7 +149,7 @@
       href="https://tailwindcss.com/docs/hover-focus-and-other-states#styling-based-on-parent-state"
       target="_blank">Form states</a>
   </h2>
-  <div class="max-w-lg border border-slate-200 rounded-xl shadow-md font-inter p-5">
+  <div class="max-w-lg border border-slate-200 rounded-xl shadow-md font-inter p-5 mt-8 mx-auto">
     <form action="">
       <label for="email">
         <span
@@ -163,13 +163,12 @@
   </div>
 
   <hr class="my-10" />
-  <h2 class="text-3xl text-center hover:text-blue-900 mb-10"><a
-      href="https://tailwindcss.com/docs/hover-focus-and-other-states#styling-based-on-parent-state"
+  <h2 class="text-3xl text-center hover:text-blue-900 mb-10"><a href="https://tailwindcss.com/docs/scale"
       target="_blank">Transform, Transition, Animation</a>
   </h2>
+
   <hr class="my-10" />
-  <h3 class="text-3xl text-center hover:text-blue-900 mb-10"><a
-      href="https://tailwindcss.com/docs/hover-focus-and-other-states#styling-based-on-parent-state"
+  <h3 class="text-3xl text-center hover:text-blue-900 mb-10"><a href="https://tailwindcss.com/docs/transition-property"
       target="_blank">Transform, Transition</a>
   </h3>
   <div
@@ -180,8 +179,7 @@
       class="w-full h-full bg-sky-500 rounded-lg shadow-lg group-hover:rotate-180 origin-top-left transition duration-1000 ease-out">
     </div>
   </div>
-  <h3 class="text-3xl text-center hover:text-blue-900 m-20"><a
-      href="https://tailwindcss.com/docs/hover-focus-and-other-states#styling-based-on-parent-state"
+  <h3 class="text-3xl text-center hover:text-blue-900 m-20"><a href="https://tailwindcss.com/docs/animation"
       target="_blank">Animation</a>
   </h3>
   <p class="mx-auto text-center underline">Animate-spin</p>
@@ -201,6 +199,57 @@
   </div>
   <p class="mx-auto text-center pt-10 underline">Custom Animate & custom duration</p>
   <div class="w-40 h-40 bg-pink-500 mx-auto rounded-lg shadow-lg mt-20 animate-goyang">
+  </div>
+
+  <hr class="my-10 bt-3" />
+  <h2 class="text-3xl text-center hover:text-blue-900 mb-10"><a href="https://tailwindcss.com/docs/container"
+      target="_blank">Layouting</a>
+  </h2>
+  <hr class="mb-3" />
+  <div class="container px-10 mx-auto">
+    <div class="border rounded-lg shadow-lg p-8 mt-8 relative">
+      <h4 class="text-3xl text-center hover:text-blue-900 mb-3"><a href="https://tailwindcss.com/docs/float"
+          target="_blank">Float-left</a>
+      </h4>
+      <img src="img/1.jpg" alt="laptop" width="150" class="float-left mr-3">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium blanditiis distinctio eum reprehenderit
+        iusto dignissimos repellendus quam veniam dolore rerum enim placeat molestiae obcaecati minus dolorum, explicabo
+        voluptates illo nam ipsum sint reiciendis nesciunt iure. Quae numquam deserunt ea inventore perspiciatis sint
+        recusandae non in consequatur. Enim et doloribus culpa voluptatibus. Sit voluptatum, esse ex dolorem repellat,
+        magnam nesciunt cupiditate facere minus soluta amet consequatur necessitatibus neque eum at omnis obcaecati et!
+        Ullam rerum placeat harum fugiat blanditiis, assumenda porro numquam quia, aut omnis molestiae esse illo quod
+        veritatis mollitia iusto eum architecto soluta voluptate rem atque vel odio iste.</p>
+    </div>
+    <div class="border rounded-lg shadow-lg mt-8 p-8">
+      <h3 class="text-3xl text-center hover:text-blue-900 mb-3"><a href="https://tailwindcss.com/docs/float"
+          target="_blank">Float-right</a>
+      </h3>
+      <img src="img/1.jpg" alt="laptop" width="150" class="float-right mr-3">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, culpa. Aperiam eum pariatur natus atque! Minima
+        ipsa eveniet pariatur alias tempora consequatur neque natus, repellendus voluptas odio optio quisquam aspernatur
+        placeat mollitia saepe architecto ex. Itaque, blanditiis a accusamus officia temporibus aliquid voluptatem autem
+        corrupti sint sequi nostrum et dolorem quo, alias quidem reiciendis debitis sed ab optio dolor eos eligendi
+        officiis earum praesentium. Mollitia ea, assumenda esse dignissimos quia et ipsum, voluptate dolores fuga libero
+        natus possimus cumque, fugit neque vero doloribus animi qui dolore hic! Libero quisquam eos, culpa, maxime et
+        velit vero impedit odio fugiat assumenda inventore!</p>
+    </div>
+  </div>
+
+  <!-- tailwind position -->
+  <div class="w-10 h-10 bg-sky-300 rounded-full flex fixed bottom-5 right-5 cursor-pointer">
+    <a href="#" class="text-xl m-auto">🔝</a>
+  </div>
+
+  <hr class="my-10 bt-3" />
+  <h2 class="text-3xl text-center hover:text-blue-900 mb-10"><a href="" target="_blank">Column</a>
+  </h2>
+  <div class="container mx-auto border rounded-lg shadow-lg p-8 mt-5 columns-3">
+    <img src="https://source.unsplash.com/600x400?car" alt="image" class="mb-4">
+    <img src="https://source.unsplash.com/600x400?laptop" alt="image">
+    <img src="https://source.unsplash.com/600x400?nature" alt="image" class="mb-4">
+    <img src="https://source.unsplash.com/600x400?lifestyle" alt="image">
+    <img src="https://source.unsplash.com/600x400?book" alt="image" class="mb-4">
+    <img src="https://source.unsplash.com/600x400?sky" alt="image">
   </div>
 
 
