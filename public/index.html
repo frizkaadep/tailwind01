@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/style.css" />
   <title>Tailwind 01</title>
   <!-- <style>
-    #toggle:checked~label div.toggle-circle {
+    #toggle:checked ~ label div.toggle-circle {
       @apply translate-x-3;
     }
   </style> -->
@@ -23,6 +23,16 @@
     Learn
     <span class="bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent">tailwindCSS</span>
   </h1>
+  <div class="flex justify-center">
+    <span class="text-sm text-slate-500 mr-2">Light</span>
+    <input type="checkbox" id="toggle" class="hidden">
+    <label for="toggle">
+      <div class="w-9 h-5 bg-slate-500 rounded-full flex items-center p-1 cursor-pointer">
+        <div class="w-4 h-4 bg-white rounded-full toggle-circle"></div>
+      </div>
+    </label>
+    <span class="text-sm text-slate-500 ml-2">Dark</span>
+  </div>
   <!-- 
     <section
       class="mb-10 bg-gradient-to-br from-indigo-200 via-red-400 to-yellow-300"
@@ -107,20 +117,10 @@
     </div> -->
 
   <hr class="my-10" />
-  <h2 class="text-3xl text-center hover:text-blue-900"><a
+  <h2 class="text-3xl text-center hover:text-blue-900 pb-2"><a
       href="https://tailwindcss.com/docs/hover-focus-and-other-states#hover-focus-and-active" target="_blank">
       Hover effect</a>
   </h2>
-  <div class="flex justify-center">
-    <span class="text-sm text-slate-500 mr-2">Light</span>
-    <input type="checkbox" id="toggle" class="">
-    <label for="toggle">
-      <div class="w-9 h-5 bg-slate-500 rounded-full flex items-center p-1 cursor-pointer">
-        <div class="w-4 h-4 bg-white rounded-full toggle-circle"></div>
-      </div>
-    </label>
-    <span class="text-sm text-slate-500 ml-2">Dark</span>
-  </div>
   <button
     class="my-10 bg-sky-500 px-5 py-3 rounded-full text-white font-semibold font-inter block mx-auto hover:bg-sky-600 hover:bg-sky-600 active:bg-sky-800 focus:ring focus:ring-sky-300 dark:bg-slate-300 dark:text-slate-800 dark:hover:text-slate-900 dark:hover:bg-slate-100">
     Simpan
@@ -171,7 +171,7 @@
     const html = document.querySelector('html');
 
     checkbox.addEventListener('click', function () {
-      checkbox.checkbox ? html.classList.add('dark') : html.classList.remove('dark');
+      checkbox.checked ? html.classList.add('dark') : html.classList.remove('dark');
     });
   </script>
 </body>
