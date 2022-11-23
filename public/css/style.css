@@ -721,10 +721,6 @@ video {
   margin-top: 6rem;
 }
 
-.mt-64 {
-  margin-top: 16rem;
-}
-
 .mb-96 {
   margin-bottom: 24rem;
 }
@@ -1055,43 +1051,43 @@ video {
 }
 
 .bg-grid-one {
-  background-image: url('./../img/grid/1.jpg');
+  background-image: url('../img/grid/1.jpg');
 }
 
 .bg-grid-two {
-  background-image: url('./../img/grid/2.jpg');
+  background-image: url('../img/grid/2.jpg');
 }
 
 .bg-grid-three {
-  background-image: url('./../img/grid/3.jpg');
+  background-image: url('../img/grid/3.jpg');
 }
 
 .bg-grid-four {
-  background-image: url('./../img/grid/4.jpg');
+  background-image: url('../img/grid/4.jpg');
 }
 
 .bg-grid-five {
-  background-image: url('./../img/grid/5.jpg');
+  background-image: url('../img/grid/5.jpg');
 }
 
 .bg-grid-six {
-  background-image: url('./../img/grid/6.jpg');
+  background-image: url('../img/grid/6.jpg');
 }
 
 .bg-grid-seven {
-  background-image: url('./../img/grid/7.jpg');
+  background-image: url('../img/grid/7.jpg');
 }
 
 .bg-grid-eight {
-  background-image: url('./../img/grid/8.jpg');
+  background-image: url('../img/grid/8.jpg');
 }
 
 .bg-grid-nine {
-  background-image: url('./../img/grid/9.jpg');
+  background-image: url('../img/grid/9.jpg');
 }
 
 .bg-grid-ten {
-  background-image: url('./../img/grid/10.jpg');
+  background-image: url('../img/grid/10.jpg');
 }
 
 .from-blue-500 {
